@@ -255,7 +255,7 @@ class TransactSearchForm(CustomFormAction):
                 end = entity.get("to")
                 grain = entity.get("additional_info").get("grain")
                 reportgrain = grain
-                
+
             if not start:
                 start = value
 
@@ -446,7 +446,7 @@ class ActionSearchTransact(Action):
             total = 44.20
         elif vendor_name == "TARGET":
             numtransacts = 2
-            total = 23.75            
+            total = 23.75
         else:
             numtransacts = 0
             total = 0.00
@@ -456,5 +456,5 @@ class ActionSearchTransact(Action):
             numtransacts=numtransacts,
             total=total,
             vendor_name=vendor_name,
-        )    
+        )
         return []
